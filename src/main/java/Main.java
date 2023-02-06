@@ -5,7 +5,7 @@ import java.net.Socket;
 public class Main {
     public static void main(String[] args) throws Exception {
         BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
-        // System.out.println(engine.search("бизнес"));
+        // System.out.println(engine.search("Облако функционирует за счёт так называемых облачных"));
         try (ServerSocket serverSocket = new ServerSocket(8989);) {
             while (true) {
                 try (

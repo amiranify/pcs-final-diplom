@@ -12,7 +12,7 @@ public class Client {
         try (Socket socket = new Socket(HOST, PORT)) {
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            writer.println("бизнес");
+            writer.println("Облако функционирует за счёт так называемых облачных");
             System.out.println(reader.readLine());
             while (reader.ready()) {
                 System.out.println(reader.readLine());
